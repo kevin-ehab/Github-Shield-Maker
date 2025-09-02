@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Shield Maker</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename = 'logo.png')}}">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Github Shield Maker</h1>
+            <p>Generate unique shields for your Github repo's README.md file!</p>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <label>Your Repo URL:</label>
+                <input id="url" placeholder="https://github.com/user/repository"></input>
+                <p id="error-box"></p>
+                <label>Which color do you want:</button>
+                </label>
+                <select id="colorSelect">
+                    <option value="random" id="rainbow">Randomize</option>
+                    <option value="brightgreen" style="color: lime">Bright green</option>
+                    <option value="green" style="color: green">Green</option>
+                    <option value="yellowgreen" style="color: yellowgreen">Yellow green</option>
+                    <option value="yellow" style="color: yellow">Yellow</option>
+                    <option value="FFFF00" style="color: #FFFF00">Bright Yellow</option>
+                    <option value="orange" style="color: orange">Orange</option>
+                    <option value="red" style="color: red">Red</option>
+                    <option value="FF0000" style="color: #FF0000">Bright red</option>
+                    <option value="blue" style="color: blue">Blue</option>
+                    <option value="purple" style="color: purple">Purple</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="darkblue" style="color: darkblue">Dark blue</option>
+                    <option value="cyan" style="color: cyan">Cyan</option>
+                    <option value="FF5733" style="color: #FF5733">Red-Orange</option>
+                    <option value="FF33A6" style="color: #FF33A6">Pink</option>
+                    <option value="8E44AD" style="color: #8E44AD">Purple</option>
+                    <option value="3498DB" style="color: #3498DB">Sky Blue</option>
+                    <option value="1ABC9C" style="color: #1ABC9C">Teal</option>
+                    <option value="34495E" style="color: #34495E">Dark Blue</option>
+                    <option value="95A5A6" style="color: #95A5A6">Gray</option>
+                    <option value="D35400" style="color: #D35400">Dark Orange</option>
+                    <option value="C0392B" style="color: #27AE60">Dark Red</option>
+                    <option value="9B59B6" style="color: #9B59B6">Amethyst</option>
+                    <option value="16A085" style="color: #16A085">Dark Teal</option>
+                    <option value="F39C12" style="color: #F39C12">Amber</option>
+                    <option value="BDC3C7" style="color: #BDC3C7">Light Gray</option>
+                    <option value="27AE60" style="color: #27AE60">Emerald Green</option>
+                </select><br>
+                <button id="generate">Generate Shields</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Decorative study images -->
+    <img src="https://img.shields.io/badge/Rust-67%25-FF0000" class="decor decor1" alt="example">
+    <img src="https://img.shields.io/badge/Python-100%25-blue" class="decor decor2" alt="example">
+    <img src="https://img.shields.io/badge/HTML-78%25-yellowgreen" class="decor decor3" alt="example">
+    <img src="https://img.shields.io/badge/Javascript-57%25-yellow" class="decor decor4" alt="example">
+    <img src="https://img.shields.io/badge/C++-100%25-purple" class="decor decor5" alt="example">
+    <img src="https://img.shields.io/badge/Closure-60%25-green" class="decor decor6" alt="example">
+    <img src="https://img.shields.io/badge/CSS-10%25-cyan" class="decor decor7" alt="example">
+    <img src="https://img.shields.io/badge/Java-100%25-orange" class="decor decor8" alt="example">
+    <img src="https://img.shields.io/badge/PHP-45%25-darkblue" class="decor decor9" alt="example">
+    <img src="https://img.shields.io/badge/C Sharp-40%25-black" class="decor decor10" alt="example">
+    <img src="https://img.shields.io/badge/Go-100%25-brightgreen" class="decor decor11" alt="example">
+    <img src="https://img.shields.io/badge/F Sharp-70%25-FFFF00" class="decor decor12" alt="example">
+    <img src="https://img.shields.io/badge/C-89%25-brown" class="decor decor13" alt="example">
+    <img src="https://img.shields.io/badge/Ruby-70%25-C0392B" class="decor decor14" alt="example">
+    <img src="https://img.shields.io/badge/COBOL-90%25-white" class="decor decor15" alt="example">
+    <img src="https://img.shields.io/badge/Flutter-100%25-teal" class="decor decor16" alt="example">
+    <img src="https://img.shields.io/badge/R-10%25-033901" class="decor decor17" alt="example">
+    <img src="https://img.shields.io/badge/SQL-60%25-pink" class="decor decor18" alt="example">
+    <img src="https://img.shields.io/badge/Assembly-40%25-C0392B" class="decor decor19" alt="example">
+    <img src="https://img.shields.io/badge/Fortan-100%25-FFFF00" class="decor decor20" alt="example">
+    <script src="{{url_for('static', filename = 'index.js')}}"></script>
+</body>
+</html>

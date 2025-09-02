@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #363738;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+select {
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+select:hover {
+    border-color: #666;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    animation: fadeDown 1s ease-in-out;
+}
+
+header p {
+    color: #dbdbdb;
+    animation: fadeDown 1.2s ease-in-out;
+}
+
+.form-container {
+    background: #ffffffdd;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    animation: fadeUp 1s ease-in-out;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 5px;
+    font-weight: 600;
+}
+
+textarea, input {
+    width: 98%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #afb6ca;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: none;
+    transition: border 0.3s;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border-color: #181818;
+}
+
+#rainbow {
+    font-weight: bold;
+    animation: randomize 3s infinite linear;
+}
+
+#syntax {
+    border: 2px dotted black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-size: large;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: black;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #9b9b9b;
+}
+
+/* Decorative floating images */
+.decor {
+    position: absolute;
+    width: 80px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.decor1 {
+    bottom: 5%;
+    right: 5%;
+}
+
+.decor2 {
+    bottom: 10%;
+    right: 15%;
+}
+
+.decor3 {
+    bottom: 15%;
+    right: 5%;
+}
+
+.decor4 {
+    bottom: 20%;
+    right: 15%;
+}
+
+.decor5 {
+    bottom: 25%;
+    right: 5%;
+}
+
+.decor6 {
+    top: 5%;
+    left: 5%;
+}
+
+.decor7 {
+    top: 10%;
+    left: 15%;
+}
+
+.decor8 {
+    top: 15%;
+    left: 5%;
+}
+
+.decor9 {
+    top: 20%;
+    left: 15%;
+}
+
+.decor10 {
+    top: 25%;
+    left: 5%;
+}
+
+.decor11 {
+    top: 5%;
+    right: 5%;
+}
+
+.decor12 {
+    top: 10%;
+    right: 15%;
+}
+
+.decor13 {
+    top: 15%;
+    right: 5%;
+}
+
+.decor14 {
+    top: 20%;
+    right: 15%;
+}
+
+.decor15 {
+    top: 25%;
+    right: 5%;
+}
+
+.decor16 {
+    bottom: 5%;
+    left: 5%;
+}
+
+.decor17 {
+    bottom: 10%;
+    left: 15%;
+}
+
+.decor18 {
+    bottom: 15%;
+    left: 5%;
+}
+
+.decor19 {
+    bottom: 20%;
+    left: 15%;
+}
+
+.decor20 {
+    bottom: 25%;
+    left: 5%;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes randomize {
+    0%, 100% { color: red ;}
+    14% {color: orange ;}
+    28% {color: yellow;}
+    42% {color: green;}
+    56% {color: blue;}
+    70% {color: indigo;}
+    84% {color: rgb(92, 15, 92);}
+}
