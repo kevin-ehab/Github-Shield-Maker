@@ -13,7 +13,11 @@ generateButton.addEventListener('click', () =>{
     })
     .then(res => res.json())
     .then(data => {
-        console.log(data.message)
-        window.location = '/generated'
+        if (data.status){
+            window.location = '/generated'
+        }
+        else{
+            alert(data.message)
+        }
     })
 })

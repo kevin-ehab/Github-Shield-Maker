@@ -21,12 +21,17 @@ def generate():
     try:
         data = request.get_json()
         link = str(data.get('link'))
+        if link[-1] == '/':
+            link = link[:-1]
         color_state = str(data.get('color'))
         user = link.split('/')[-2]
         repo = link.split('/')[-1]
 
         response = requests.get(f'https://api.github.com/repos/{user}/{repo}/languages')
         languages = dict(response.json())
+
+        if not languages:
+            return jsonify({'message': 'invalid repository link', 'status': 0})
 
         shields = []
         combined_badges = ''
@@ -50,8 +55,8 @@ def generate():
             })
         colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo'] 
     except:
-        return jsonify({'message':"Error! Check your URL"})
-    return jsonify({'message':"Success!"})
+        return jsonify({'message': 'invalid repository link', 'status': 0})
+    return jsonify({'message':"Success!", 'status':1})
 
 @app.route('/generated')
 def generated():
