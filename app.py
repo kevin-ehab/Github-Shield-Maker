@@ -30,7 +30,7 @@ def generate():
         response = requests.get(f'https://api.github.com/repos/{user}/{repo}/languages')
         languages = dict(response.json())
 
-        if not languages:
+        if len(languages.keys()) == 0:
             return jsonify({'message': 'invalid repository link', 'status': 0})
 
         shields = []
