@@ -31,7 +31,7 @@ Check out the live demo here: [Your Demo Link](https://your-demo-link.com)
 
 ## 🏷️ Example Badges
 
-![Badge](https://img.shields.io/badge/HTML-57.91%25-yellow)
+![Badge](https://img.shields.io/badge/HTML-57.91%25-red)
 ![Badge](https://img.shields.io/badge/CSS-21.69%25-purple)
 ![Badge](https://img.shields.io/badge/Python-12.64%25-blue)
 ![Badge](https://img.shields.io/badge/JavaScript-7.76%25-orange)
