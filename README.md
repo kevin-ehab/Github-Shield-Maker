@@ -15,7 +15,7 @@ Generate **unique shields** for your GitHub repository's `README.md` file based 
 
 ## 🔗 Demo
 
-Check out the live demo here: [GitHub Shield Maker](https://GitHub shield maker.pythonanywhere.com)
+Check out the live demo here: [GitHub Shield Maker](https://GitHubshieldmaker.pythonanywhere.com)
 
 ---
 
